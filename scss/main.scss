@@ -1,3 +1,36 @@
-body {
-  background: orangered;
+@use "config" as var;
+@use "resets";
+
+@function rem($pxSize) {
+  $remSize: calc($pxSize / 16);
+  @return #{$remSize}rem;
+}
+
+.inactive {
+  display: none !important;
+}
+
+//HEADER, NAV AND MENU
+header {
+  margin: rem(40) rem(32);
+  margin-bottom: rem(80);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  .header__logo {
+    width: rem(149);
+    img {
+      width: 100%;
+    }
+  }
+}
+
+nav {
+  .nav__btn {
+    button {
+      background: none;
+      border: none;
+    }
+  }
 }

@@ -1,0 +1,15 @@
+@use "config" as var;
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-size: var.$font-base;
+  font-family: var.$font-fam;
+  font-weight: var.$font-w-10;
+}

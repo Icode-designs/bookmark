@@ -1,0 +1,38 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 18px;
+  font-family: "Rubik", sans-serif;
+  font-weight: 400;
+}
+
+.inactive {
+  display: none !important;
+}
+
+header {
+  margin: 2.5rem 2rem;
+  margin-bottom: 5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header .header__logo {
+  width: 9.3125rem;
+}
+header .header__logo img {
+  width: 100%;
+}
+
+nav .nav__btn button {
+  background: none;
+  border: none;
+}
+
+/*# sourceMappingURL=main.css.map */
