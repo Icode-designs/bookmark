@@ -21,7 +21,6 @@
     />
 
     <!-- CUSTOM STYLES -->
-    <link rel="stylesheet" href="css/main.css" />
 
     <title>Frontend Mentor | Bookmark landing page</title>
 
@@ -30,26 +29,257 @@
       content="A clean and simple
     interface to organize your favourite websites"
     />
+    <link rel="stylesheet" href="/css/main.css" />
   </head>
   <body>
-    <header>
-      <div class="header__logo">
-        <a href="#"
-          ><img src="images/logo-bookmark-white.svg" alt="Bookmark"
-        /></a>
-      </div>
-      <nav>
-        <div class="nav__btn">
-          <button class="btn--open">
-            <img src="images/icon-hamburger.svg" alt="menu-open" />
-          </button>
-          <button class="btn--close inactive">
-            <img src="images/icon-close.svg" alt="menu-close" />
-          </button>
-        </div>
-      </nav>
-    </header>
+    <section class="hero">
+      <header>
+        <nav>
+          <div class="header__logo">
+            <a href="#"
+              ><img
+                src="images/logo-bookmark-white.svg"
+                alt="Bookmark"
+                class="logo--white inactive" />
+              <img
+                src="images/logo-bookmark.svg"
+                alt="Bookmark"
+                class="logo--dark"
+            /></a>
+          </div>
 
+          <div class="nav__btn">
+            <button class="btn--open">
+              <img src="images/icon-hamburger.svg" alt="menu-open" />
+            </button>
+            <button class="btn--close inactive">
+              <img src="images/icon-close.svg" alt="menu-close" />
+            </button>
+          </div>
+        </nav>
+
+        <menu class="header__menu inactive">
+          <ul>
+            <li><a href="#">features</a></li>
+            <li><a href="#">pricing</a></li>
+            <li><a href="#">contact</a></li>
+            <li><button>login</button></li>
+          </ul>
+
+          <div class="socials">
+            <a href="#"
+              ><img src="images/icon-facebook.svg" alt="facebook"
+            /></a>
+            <a href="#"><img src="images/icon-twitter.svg" alt="twitter" /></a>
+          </div>
+        </menu>
+      </header>
+
+      <div class="hero__content">
+        <div class="hero__img">
+          <img src="images/illustration-hero.svg" alt="hero-img" />
+        </div>
+        <article>
+          <h1>A Simple Bookmark Manager</h1>
+          <p>
+            A clean and simple interface to organize your favourite websites.
+            Open a new browser tab and see your sites load instantly. Try it for
+            free.
+          </p>
+
+          <div class="hero__art-btn">
+            <button>Get it on Chrome</button>
+            <button>Get it on Firefox</button>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="features">
+      <article>
+        <h1>Features</h1>
+        <p>
+          Our aim is to make it quick and easy for you to access your favourite
+          websites. Your bookmarks sync between your devices so you can access
+          them on the go.
+        </p>
+      </article>
+      <ul>
+        <li>
+          <button class="feature__btn btn--active">simple bookmarking</button>
+        </li>
+        <li><button class="feature__btn">speedy searching</button></li>
+        <li><button class="feature__btn">easy sharing</button></li>
+      </ul>
+      <div class="feature">
+        <div class="feature__img">
+          <img src="images/illustration-features-tab-1.svg" alt="feature--1" />
+        </div>
+
+        <article>
+          <h1>Bookmark in one click</h1>
+          <p>
+            Organize your bookmarks however you like. Our simple drag-and-drop
+            interface gives you complete control over how you manage your
+            favourite sites.
+          </p>
+        </article>
+        <button>More Info</button>
+      </div>
+      <div class="feature inactive">
+        <div class="feature__img">
+          <img src="images/illustration-features-tab-2.svg" alt="feature--2" />
+        </div>
+
+        <article>
+          <h1>Intelligent search</h1>
+          <p>
+            Our powerful search feature will help you find saved sites in no
+            time at all. No need to trawl through all of your bookmarks.
+          </p>
+        </article>
+        <button>More Info</button>
+      </div>
+      <div class="feature inactive">
+        <div class="feature__img">
+          <img src="images/illustration-features-tab-3.svg" alt="feature--3" />
+        </div>
+
+        <article>
+          <h1>Share your bookmarks</h1>
+          <p>
+            Easily share your bookmarks and collections with others. Create a
+            shareable link that you can send at the click of a button.
+          </p>
+        </article>
+        <button>More Info</button>
+      </div>
+    </section>
+
+    <section class="downloads">
+      <article>
+        <h1>Download the extention</h1>
+        <p>
+          We’ve got more browsers in the pipeline. Please do let us know if
+          you’ve got a favourite you’d like us to prioritize.
+        </p>
+      </article>
+
+      <div class="download">
+        <div class="download__img">
+          <img src="images/logo-chrome.svg" alt="chrome" />
+        </div>
+        <article>
+          <h1>Add to Chrome</h1>
+          <p>Minimum version 62</p>
+        </article>
+        <div><img src="images/bg-dots.svg" alt="dots" /></div>
+        <button>Add & Install Extension</button>
+      </div>
+
+      <div class="download">
+        <div class="download__img">
+          <img src="images/logo-firefox.svg" alt="Firefox" />
+        </div>
+        <article>
+          <h1>Add to Firefox</h1>
+          <p>Minimum version 55</p>
+        </article>
+        <div><img src="images/bg-dots.svg" alt="dots" /></div>
+        <button>Add & Install Extension</button>
+      </div>
+
+      <div class="download">
+        <div class="download__img">
+          <img src="images/logo-opera.svg" alt="Opera" />
+        </div>
+        <article>
+          <h1>Add to Opera</h1>
+          <p>Minimum version 62</p>
+        </article>
+        <div><img src="images/bg-dots.svg" alt="dots" /></div>
+        <button>Add & Install Extension</button>
+      </div>
+    </section>
+
+    <section class="faq">
+      <article>
+        <h1>Frequently Asked Questions</h1>
+        <p>
+          Here are some of our FAQs. If you have any other questions you’d like
+          answered please feel free to email us.
+        </p>
+      </article>
+
+      <div class="accordions">
+        <div class="accordion">
+          <div class="acc__button">
+            <h2>What is Bookmark?</h2>
+            <button>
+              <i class="fa-solid fa-angle-down"></i
+              ><i class="fa-solid fa-angle-up inactive"></i>
+            </button>
+          </div>
+          <p class="answer inactive">
+            Bookmark is the best bookmarking app on the market that boosts of a
+            clean and simple interface to organize your favourite websites. Open
+            a new browser tab and see your sites load instantly.
+          </p>
+        </div>
+
+        <div class="accordion">
+          <div class="acc__button">
+            <h2>How can I request a new browser?</h2>
+            <button>
+              <i class="fa-solid fa-angle-down"></i
+              ><i class="fa-solid fa-angle-up inactive"></i>
+            </button>
+          </div>
+          <p class="answer inactive">
+            You can request a new browser through our dedicated App store. Visit
+            our store of Google Play or Apple Store. Contact our support team if
+            you encounter any troubles installing the application on your
+            device.
+          </p>
+        </div>
+
+        <div class="accordion">
+          <div class="acc__button">
+            <h2>Is there a mobile app?</h2>
+            <button>
+              <i class="fa-solid fa-angle-down"></i
+              ><i class="fa-solid fa-angle-up inactive"></i>
+            </button>
+          </div>
+          <p class="answer inactive">
+            "Yes! We recently launched a mobile app version for android and iOS.
+            You can proceed to your respective App stores to download Bookmark.
+          </p>
+        </div>
+
+        <div class="accordion">
+          <div class="acc__button">
+            <h2>What about other Chromium browsers?</h2>
+            <button>
+              <i class="fa-solid fa-angle-down"></i
+              ><i class="fa-solid fa-angle-up inactive"></i>
+            </button>
+          </div>
+          <p class="answer inactive">
+            Chromium browsers are currently in development and scheduled to be
+            released in due time. Our developers are working round the clock to
+            push the final app into production.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <script
+      src="https://kit.fontawesome.com/3ec61a5297.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- CUSTOM SCRIPT -->
     <script src="main.js"></script>
   </body>
 </html>
