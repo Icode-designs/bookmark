@@ -137,6 +137,10 @@ img {
 
 a {
   text-decoration: none;
+
+  &:hover {
+    color: var.$primary-col-20 !important;
+  }
 }
 
 ul {

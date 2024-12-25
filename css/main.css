@@ -139,6 +139,9 @@ img {
 a {
   text-decoration: none;
 }
+a:hover {
+  color: hsl(0, 94%, 66%) !important;
+}
 
 ul {
   list-style-type: none;
