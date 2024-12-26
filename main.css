@@ -55,6 +55,7 @@ body {
 
 .header--active {
   background: hsl(229, 31%, 21%);
+  position: fixed;
   height: 100%;
   opacity: 95%;
 }
@@ -145,24 +146,6 @@ a:hover {
 
 ul {
   list-style-type: none;
-}
-
-.pattern {
-  position: absolute;
-  z-index: -1;
-  width: 18.03125rem;
-  height: 100%;
-  background: hsl(231, 69%, 60%);
-}
-.pattern:first-of-type {
-  right: 0;
-  border-top-left-radius: 19.78125rem;
-  border-bottom-left-radius: 19.78125rem;
-}
-.pattern:last-of-type {
-  left: 0;
-  border-top-right-radius: 19.78125rem;
-  border-bottom-right-radius: 19.78125rem;
 }
 
 header {
