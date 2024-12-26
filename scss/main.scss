@@ -278,10 +278,22 @@ nav {
     &:first-of-type {
       background: var.$primary-col-10;
       color: var.$neutral-col-30;
+
+      &:hover {
+        background: none;
+        border: solid 2px var.$primary-col-10;
+        color: var.$primary-col-10;
+      }
     }
 
     &:last-of-type {
       box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+
+      &:hover {
+        background: none;
+        border: solid 2px var.$neutral-col-10;
+        color: var.$neutral-col-10;
+      }
     }
   }
 }
@@ -353,6 +365,12 @@ nav {
     border: none;
     border-radius: rem(5);
     color: var.$neutral-col-30;
+
+    &:hover {
+      background: none;
+      border: solid 2px var.$primary-col-10;
+      color: var.$primary-col-10;
+    }
   }
 }
 
@@ -410,6 +428,12 @@ nav {
     background: var.$primary-col-10;
     color: var.$neutral-col-30;
     border-radius: rem(5);
+
+    &:hover {
+      background: none;
+      border: solid 2px var.$primary-col-10;
+      color: var.$primary-col-10;
+    }
   }
 }
 
@@ -449,6 +473,12 @@ nav {
     font-size: rem(14);
     line-height: rem(28);
     margin: 0 auto;
+
+    &:hover {
+      background: none;
+      border: solid 2px var.$primary-col-10;
+      color: var.$primary-col-10;
+    }
   }
 }
 
@@ -578,6 +608,12 @@ nav {
       text-align: center;
       background: var.$primary-col-20;
       color: var.$neutral-col-30;
+
+      &:hover {
+        background: none;
+        border: solid 2px var.$neutral-col-10;
+        color: var.$neutral-col-10;
+      }
     }
   }
 }
@@ -703,7 +739,7 @@ footer {
     gap: rem(30);
 
     > * {
-      max-width: rem(442);
+      max-width: rem(452);
     }
     article {
       margin: 0;
@@ -727,7 +763,7 @@ footer {
     }
 
     button {
-      max-width: rem(126);
+      max-width: rem(136);
       padding: rem(10) rem(24);
       font-size: rem(14);
       line-height: rem(28);
@@ -843,6 +879,12 @@ footer {
           button {
             background: var.$primary-col-20;
             font-size: rem(13);
+
+            &:hover {
+              background: none;
+              border: solid 2px var.$neutral-col-10;
+              color: var.$neutral-col-10;
+            }
           }
         }
       }
@@ -953,7 +995,9 @@ footer {
   .downloads {
     max-width: rem(911);
     margin: 0 auto;
-    margin-bottom: rem(189);
+    margin-bottom: rem(149);
+    overflow: visible;
+    padding-bottom: rem(80);
 
     > article {
       max-width: rem(541);

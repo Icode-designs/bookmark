@@ -263,8 +263,18 @@ nav .nav__btn button {
   background: hsl(231, 69%, 60%);
   color: hsl(0, 0%, 100%);
 }
+.hero__art-btn button:first-of-type:hover {
+  background: none;
+  border: solid 2px hsl(231, 69%, 60%);
+  color: hsl(231, 69%, 60%);
+}
 .hero__art-btn button:last-of-type {
   box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+}
+.hero__art-btn button:last-of-type:hover {
+  background: none;
+  border: solid 2px hsl(229, 8%, 60%);
+  color: hsl(229, 8%, 60%);
 }
 
 .features {
@@ -327,6 +337,11 @@ nav .nav__btn button {
   border-radius: 0.3125rem;
   color: hsl(0, 0%, 100%);
 }
+.feature button:hover {
+  background: none;
+  border: solid 2px hsl(231, 69%, 60%);
+  color: hsl(231, 69%, 60%);
+}
 
 .downloads {
   padding: 0rem 2rem;
@@ -377,6 +392,11 @@ nav .nav__btn button {
   color: hsl(0, 0%, 100%);
   border-radius: 0.3125rem;
 }
+.download button:hover {
+  background: none;
+  border: solid 2px hsl(231, 69%, 60%);
+  color: hsl(231, 69%, 60%);
+}
 
 .faq {
   padding: 0 2rem;
@@ -410,6 +430,11 @@ nav .nav__btn button {
   font-size: 0.875rem;
   line-height: 1.75rem;
   margin: 0 auto;
+}
+.faq > button:hover {
+  background: none;
+  border: solid 2px hsl(231, 69%, 60%);
+  color: hsl(231, 69%, 60%);
 }
 
 .accordion {
@@ -527,6 +552,11 @@ nav .nav__btn button {
   background: hsl(0, 94%, 66%);
   color: hsl(0, 0%, 100%);
 }
+.form form button:hover {
+  background: none;
+  border: solid 2px hsl(229, 8%, 60%);
+  color: hsl(229, 8%, 60%);
+}
 
 footer {
   background: hsl(229, 31%, 21%);
@@ -623,7 +653,7 @@ footer .attribution a {
     gap: 1.875rem;
   }
   .form > * {
-    max-width: 27.625rem;
+    max-width: 28.25rem;
   }
   .form article {
     margin: 0;
@@ -645,7 +675,7 @@ footer .attribution a {
     margin-bottom: 0;
   }
   .form button {
-    max-width: 7.875rem;
+    max-width: 8.5rem;
     padding: 0.625rem 1.5rem;
     font-size: 0.875rem;
     line-height: 1.75rem;
@@ -738,6 +768,11 @@ footer .attribution a {
     background: hsl(0, 94%, 66%);
     font-size: 0.8125rem;
   }
+  header .header__menu ul li button:hover {
+    background: none;
+    border: solid 2px hsl(229, 8%, 60%);
+    color: hsl(229, 8%, 60%);
+  }
   header .header__menu .socials {
     display: none;
   }
@@ -825,7 +860,9 @@ footer .attribution a {
   .downloads {
     max-width: 56.9375rem;
     margin: 0 auto;
-    margin-bottom: 11.8125rem;
+    margin-bottom: 9.3125rem;
+    overflow: visible;
+    padding-bottom: 5rem;
   }
   .downloads > article {
     max-width: 33.8125rem;
