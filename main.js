@@ -15,6 +15,8 @@ const emailInput = document.querySelector(".email-input");
 const form = document.querySelector(".email-form");
 const inputHolder = document.querySelector(".input-holder");
 const errorSym = document.querySelector(".fa-circle-exclamation");
+const heroImg = document.querySelector(".hero__img");
+const pattern = document.querySelectorAll(".pattern");
 const body = document.body;
 const emailRegx = "/^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+.[a-zA-Z]{2,}$/";
 
@@ -228,3 +230,5 @@ form.addEventListener("submit", (e) => {
 
   timer = 0;
 });
+
+console.log(heroImg.style);
