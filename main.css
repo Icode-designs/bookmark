@@ -319,6 +319,9 @@ nav .nav__btn button {
 .feature .feature__img {
   margin-bottom: 4.3125rem;
 }
+.feature article {
+  text-align: center;
+}
 .feature article h1 {
   font-size: 1.5rem;
   line-height: 3.25rem;
